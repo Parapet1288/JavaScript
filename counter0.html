@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter0</title>
+    <script>
+        let counter = 0;
+        function count() {
+            counter++;
+            document.querySelector("#counter").innerHTML = counter;
+        }
+        function subtract() {
+            counter--;
+            document.querySelector("#counter").innerHTML = counter;
+        }
+    </script>
+</head>
+<body>
+    <a href="index.html">Powrot do strony glownej</a>
+    <h1 id="counter">0</h1>
+    <button onclick="count()">Dodaj 1</button>
+    <button onclick="subtract()">Odejmij 1</button>
+
+    
+</body>
+</html>
